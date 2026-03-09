@@ -11,8 +11,11 @@
 </head>
 <header>
   
-  <nav class="nav po">
-    <ul class="sidebar">
+ 
+  <nav class="nav po"style="gap: 3px;">
+   
+    <ul class="sidebar" >
+    
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Products</a></li>
@@ -21,13 +24,17 @@
       <li><a href="index.html">Logout</a></li>
     </ul>
     <ul>
-    <li><a href="#"><img src="image/campaign_8852037.png" alt="Logo" class="nav-logo"></a></li>      <li class="hideOnMobile"><a href="#">Blog</a></li>
+    <li><img src="image/campaign_8852037.png" alt="Logo" class="nav-logo"></li>
+    <div class="topnav" >
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
       <li class="hideOnMobile"><a href="#">Products</a></li>
       <li class="hideOnMobile"><a href="#">About</a></li>
       <li class="hideOnMobile"><a href="#">Forum</a></li>
       <li class="hideOnMobile"><a href="index.html">Logout</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </div>
     </ul>
+    
   </nav>
   
 </header>
@@ -35,7 +42,7 @@
   <!-- Sidebar -->
   <div class="sidebar1">
     <div class="sidebar1-header">
-      <span>Menu</span>
+      <span>Menu List</span>
     </div>
   
     <ul class="navmenu">
@@ -64,7 +71,7 @@
           <li><a class="dropdown-item" href="#">Something else</a></li>
         </ul>
       </li>
-
+      <!--modal1-->
     
   
       <!-- Profile -->
@@ -135,24 +142,14 @@
       <li class="navitem ">
        <img src="image/campaign_8852037.png" alt="pic" srcset="">
         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="nav-text">In-Patient Mgt</span>
+          <span class="nav-text">Antenatal Care</span>
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Admitted/Discharged Patient</a></li>
-          <li><a class="dropdown-item" href="#">Patient Admission</a></li>
-          <li><a class="dropdown-item" href="#">Patient Transfer</a></li>
-          <li><a class="dropdown-item" href="#">Admission Request</a></li>
-          <li><a class="dropdown-item" href="#">Bed Status</a></li>
-          <li><a class="dropdown-item" href="#">Discharged</a></li>
-          <li><a class="dropdown-item" href="#">Bed Status</a></li>
-          <li><a class="dropdown-item" href="#">New Born Admission</a></li>
-          <li><a class="dropdown-item" href="#">Bed Status</a></li>
+          <li><a class="dropdown-item" href="#">Register Patient</a></li>
+          <li><a class="dropdown-item" href="#">Schedule Visit</a></li>
+          <li><a class="dropdown-item" href="#">View Records</a></li>
         </ul>
       </li>
-
-     
-      
-      <!-- Add more items as needed -->
     </ul>
   </div>
   <!-- Main Content -->
@@ -171,7 +168,7 @@
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg bg-light rounded-8">
     <div class="modal-content rounded-8" style="background-color: rgb(255, 255, 255);">
-      <div class="modal-header">
+      <div class="modal-header bg-success">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">Out-Patient Visit</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>

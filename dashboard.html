@@ -11,8 +11,10 @@
 </head>
 <header>
   
-  <nav class="nav po">
-    <ul class="sidebar">
+  <nav class="nav po"style="gap: 3px;">
+   
+    <ul class="sidebar" >
+    
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Products</a></li>
@@ -21,13 +23,17 @@
       <li><a href="index.html">Logout</a></li>
     </ul>
     <ul>
-    <li><a href="#"><img src="image/campaign_8852037.png" alt="Logo" class="nav-logo"></a></li>      <li class="hideOnMobile"><a href="#">Blog</a></li>
+    <li><img src="image/campaign_8852037.png" alt="Logo" class="nav-logo"></li>
+    <div class="topnav" >
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
       <li class="hideOnMobile"><a href="#">Products</a></li>
       <li class="hideOnMobile"><a href="#">About</a></li>
       <li class="hideOnMobile"><a href="#">Forum</a></li>
       <li class="hideOnMobile"><a href="index.html">Logout</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </div>
     </ul>
+    
   </nav>
   
 </header>
@@ -35,7 +41,7 @@
   <!-- Sidebar -->
   <div class="sidebar1">
     <div class="sidebar1-header">
-      <span>MyApp</span>
+      <span>Menu List</span>
     </div>
   
     <ul class="navmenu">
@@ -143,10 +149,6 @@
           <li><a class="dropdown-item" href="#">View Records</a></li>
         </ul>
       </li>
-
-     
-      <!-- Repeated Antenatal entries removed duplicates; kept one for demo -->
-      <!-- Add more items as needed -->
     </ul>
   </div>
   <!-- Main Content -->
@@ -274,179 +276,8 @@
     </div>
   </div>
 </div>
-<!-- dashboard ends-->
-<!-- regpatient begins-->
-<!--<div class="foorm">
-   <div class="container">
-    <div class="row">
-    <div class="col">
-      <div class="container 1">
-        <div class="header2">
-          <h1>Patient Registration Form</h1>
-          <p>Please fill in all required fields accurately</p>
-        </div>
-    
-        <form id="patientForm">
-    
-          //Personal Details//
-          <div class="form-section">
-            <h2 class="section-title">Personal Details</h2>
-            <div class="form-grid">
-    
-              Patient ID (Auto-generated) -->
-            <!-- <div class="form-group full-width">
-                <label>Patient ID</label>
-                <div class="patient-id" id="patientId">HOSP-XXXXXX-XXX</div>
-              </div>-->
-    
-              <!-- Photo Upload -->
-              <!--<div class="form-group">
-                <label>Patient Photo</label>
-                <div class="photo-upload">
-                  <input type="file" id="photo" accept="image/*" class="form-control" />
-                  <div class="photo-preview" id="photoPreview">
-                    <div class="placeholder">No photo</div>
-                  </div>
-                </div>
-              </div>
-    
-              <!-- Registration Date -->
-              <!--<div class="form-group">
-                <label for="regDate">Date of Registration <span style="color:red">*</span></label>
-                <input type="date" id="regDate" name="regDate" class="form-control" required />
-              </div>
-    
-              <div class="form-group">
-                <label for="firstName">First Name <span style="color:red">*</span></label>
-                <input type="text" id="firstName" name="firstName" class="form-control" required />
-              </div>
-    
-              <div class="form-group">
-                <label for="middleName">Middle Name</label>
-                <input type="text" id="middleName" name="middleName" class="form-control" />
-              </div>
-    
-              <div class="form-group">
-                <label for="lastName">Last Name <span style="color:red">*</span></label>
-                <input type="text" id="lastName" name="lastName" class="form-control" required />
-              </div>
-    
-              <div class="form-group">
-                <label for="dob">Date of Birth <span style="color:red">*</span></label>
-                <input type="date" id="dob" name="dob" required class="form-control" />
-              </div>
-    
-              <div class="form-group">
-                <label>Gender <span style="color:red">*</span></label>
-                <div class="radio-group">
-                  <div class="radio-item">
-                    <input type="radio" id="male" name="gender" value="Male" required />
-                    <label for="male">Male</label>
-                  </div>
-                  <div class="radio-item">
-                    <input type="radio" id="female" name="gender" value="Female" />
-                    <label for="female">Female</label>
-                  </div>
-                  <div class="radio-item">
-                    <input type="radio" id="other" name="gender" value="Other" />
-                    <label for="other">Other</label>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="form-group">
-                <label for="bloodGroup">Blood Group</label>
-                <select id="bloodGroup" name="bloodGroup"  class="form-control">
-                  <option value="">Select</option>
-                  <option>A+</option><option>A-</option>
-                  <option>B+</option><option>B-</option>
-                  <option>AB+</option><option>AB-</option>
-                  <option>O+</option><option>O-</option>
-                </select>
-              </div>
-    
-              <div class="form-group full-width">
-                <label for="phone">Phone Number <span style="color:red">*</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="+234 987 654 3210" class="form-control" required />
-              </div>
-    
-              <div class="form-group full-width">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="patient@example.com" class="form-control" />
-              </div>
-    
-            </div>
-          </div>
-    
-          <!-- Address -->
-        <!--  <div class="form-section">
-            <h2 class="section-title">Address</h2>
-            <div class="form-grid">
-              <div class="form-group full-width">
-                <label for="addressLine1">Address Line 1 <span style="color:red">*</span></label>
-                <input type="text" id="addressLine1" class="form-control" required />
-              </div>
-              <div class="form-group full-width">
-                <label for="addressLine2">Address Line 2</label>
-                <input type="text" id="addressLine2" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="city">City <span style="color:red">*</span></label>
-                <input type="text" id="city" required class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="state">State <span style="color:red">*</span></label>
-                <input type="text" id="state" required class="form-control"/>
-              </div>
-              <div class="form-group">
-                <label for="pincode">Pincode <span style="color:red">*</span></label>
-                <input type="text" id="pincode" maxlength="6" class="form-control" required />
-              </div>
-              <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" id="country" value="Nigeria" class="form-control"  />
-              </div>
-            </div>
-          </div>
-    
-          <!-- Nearest Relative 
-          <div class="form-section">
-            <h2 class="section-title">Nearest Relative / Emergency Contact</h2>
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="relativeName">Full Name <span style="color:red">*</span></label>
-                <input type="text" id="relativeName" class="form-control" required />
-              </div>
-              <div class="form-group">
-                <label for="relation">Relationship <span style="color:red">*</span></label>
-                <select id="relation" class="form-control" required>
-                  <option value="">Select</option>
-                  <option>Spouse</option><option>Parent</option>
-                  <option>Child</option><option>Sibling</option>
-                  <option>Friend</option><option>Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="relativePhone">Phone <span style="color:red">*</span></label>
-                <input type="tel" id="relativePhone"class="form-control" required />
-              </div>
-              <div class="form-group full-width">
-                <label for="relativeAddress">Address (if different)</label>
-                <textarea id="relativeAddress" class="form-control"></textarea>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Buttons 
-          <div class="btn-container" >
-            <button type="submit" style="border-radius: 17px;">Register Patient </button>
-            <button type="button" class= "print"  onclick="window.print()" >Print Slip</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>-->
+
+
 </div>
 
 
